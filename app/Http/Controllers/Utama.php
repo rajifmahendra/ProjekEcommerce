@@ -13,7 +13,7 @@ class Utama extends Controller
 
     public function store(Request $request){
       $this->validate($request, [
-        'file' => 'required | max:2048'
+        'file' => 'required|max:2048'
       ]);
       $file = $request->file('file');
       $nama_file = time()."_".$file->getClientOriginalName();
@@ -25,7 +25,7 @@ class Utama extends Controller
           'gambar' => $nama_file
         ]);
         $res['message'] = "Success";
-        $res['values'] = $date;
+        $res['values'] = $data;
         return response($res);
       }
     }
