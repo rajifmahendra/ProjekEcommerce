@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\M_Barang; //MODEL NYA
+use Illuminate\Support\Facades\DB;
 
 class Utama extends Controller
 {
     public function index(){
-      return view('utama');
+      $barang = DB::table('tbl_barang')->get();
+      return view('utama',['barang' => $barang]);
     }
 
     public function store(Request $request){
