@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class Utama extends Controller
 {
-    public funtion index(){
+    public function index(){
       return view('utama');
     }
 }
