@@ -13,8 +13,10 @@ class CreateCheckoutTable extends Migration
      */
     public function up()
     {
-        Schema::create('checkout', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('tbl_checkout', function (Blueprint $table) {
+            $table->string('id_checkout');
+            $table->string('id_user');
+            $table->float('total');
             $table->timestamps();
         });
     }

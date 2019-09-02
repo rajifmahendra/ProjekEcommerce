@@ -13,8 +13,11 @@ class CreateKonfirmasiTable extends Migration
      */
     public function up()
     {
-        Schema::create('konfirmasi', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('tbl_konfirmasi', function (Blueprint $table) {
+            $table->bigIncrements('id_konfirmasi');
+            $table->string('id_user');
+            $table->string('id_checkout');
+            $table->string('id_bukti');
             $table->timestamps();
         });
     }

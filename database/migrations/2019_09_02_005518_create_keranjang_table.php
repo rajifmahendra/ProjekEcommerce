@@ -13,8 +13,10 @@ class CreateKeranjangTable extends Migration
      */
     public function up()
     {
-        Schema::create('keranjang', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('tbl_keranjang', function (Blueprint $table) {
+            $table->bigIncrements('id_keranjang');
+            $table->string('id_user');
+            $table->string('id_barang');
             $table->timestamps();
         });
     }
