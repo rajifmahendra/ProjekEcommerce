@@ -21,6 +21,12 @@ class Login extends Controller
 
       return redirect('Login');
     }
-
+    public function Masuk(Request $request){
+      $user = DB::table('tbl_user')->where('email', $request->email)->first();
+      if ($user->password == $request->password) {
+        $request->session()->put('id', $user->id);
+        echo "Data berhasil di simpan = ".$request->session()->get;
+      }
+    }
 
 }
