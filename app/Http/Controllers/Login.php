@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class Login extends Controller
 {
@@ -24,9 +25,17 @@ class Login extends Controller
     public function Masuk(Request $request){
       $user = DB::table('tbl_user')->where('email', $request->email)->first();
       if ($user->password == $request->password) {
-        $request->session()->put('id', $user->id);
-        echo "Data berhasil di simpan = ".$request->session()->get;
+        Session::put('id_user', $user->id);
+        echo "Data berhasil di simpan = ".$request->session()->get('id');
+        return redirect('/');
+      }else {
+        echo "Login gagal";
       }
+    }
+
+    public function Keluar(){
+      Session::forget('id_user');
+      return redirect('/');
     }
 
 }
