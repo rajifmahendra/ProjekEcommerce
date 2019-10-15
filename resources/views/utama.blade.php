@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-Shopper</title>
+    <title>Home | Qahwa</title>
     <link href="BahanStudy/css/bootstrap.min.css" rel="stylesheet">
     <link href="BahanStudy/css/font-awesome.min.css" rel="stylesheet">
     <link href="BahanStudy/css/prettyPhoto.css" rel="stylesheet">
@@ -34,16 +34,16 @@
 				<div class="row">
 					<div class="col-md-4 clearfix">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="BahanStudy/images/home/logo.png" alt="" /></a>
+							<a href=""><img src="BahanStudy/imagesweb/logo.jpeg" alt="" / height="50" width="50"></a>
 						</div>
 
 					</div>
 					<div class="col-md-8 clearfix">
 						<div class="shop-menu clearfix pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="/Checkout"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="/Keranjang"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="/Login"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -65,9 +65,9 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="/" class="active">Home</a></li>
 								<li><a href="contact-us.html">Contact</a></li>
-								<li><a href="konfirmasi.html">Confirm</a></li>
+								<li><a href="/Confirm">Confirm</a></li>
 							</ul>
 						</div>
 					</div>
@@ -95,39 +95,39 @@
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free E-Commerce Template</h2>
+									<h1><span>Caffe</span>-Shop</h1>
+									<h2>Coffe</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="BahanStudy/images/home/girl1.jpg" class="girl img-responsive" alt="" />
-									<img src="BahanStudy/images/home/pricing.png"  class="pricing" alt="" />
+									<img src="BahanStudy/imagesweb/arabica/saring.jpg" class="girl img-responsive" alt="" />
+									<img src="BahanStudy/imagesweb/arabica/tubruk.jpg"  class="pricing" alt="" />
 								</div>
 							</div>
 							<div class="item">
 								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>100% Responsive Design</h2>
+									<h1><span>Caffe</span>-Shop</h1>
+									<h2>Espresso</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="BahanStudy/images/home/girl2.jpg" class="girl img-responsive" alt="" />
-									<img src="BahanStudy/images/home/pricing.png"  class="pricing" alt="" />
+									<img src="BahanStudy/imagesweb/espresso/affogato.jpg" class="girl img-responsive" alt="" />
+									<img src="BahanStudy/images/espresso/cappucino.jpg"  class="pricing" alt="" />
 								</div>
 							</div>
 
 							<div class="item">
 								<div class="col-sm-6">
-									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free Ecommerce Template</h2>
+									<h1><span>Caffe</span>-Shop</h1>
+									<h2>Rice bowl</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="BahanStudy/images/home/girl3.jpg" class="girl img-responsive" alt="" />
-									<img src="BahanStudy/images/home/pricing.png" class="pricing" alt="" />
+									<img src="BahanStudy/imagesweb/rice/ayam.jpg" class="girl img-responsive" alt="" />
+									<img src="BahanStudy/imagesweb/rice/katsu.jpg" class="pricing" alt="" />
 								</div>
 							</div>
 
@@ -152,7 +152,7 @@
 				<div class="col-sm-3">
 					<div class="left-sidebar">
 						<div class="shipping text-center"><!--shipping-->
-							<img src="BahanStudy/images/home/shipping.jpg" alt="" />
+
 						</div><!--/shipping-->
 
 					</div>
@@ -166,7 +166,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="/data_file/{{ $brg->gambar }}" alt="" />
+											<img src="/data_file/{{ $brg->gambar }}" alt="" height="250" width="250" />
 											<h2>Rp. {{ $brg->harga }}</h2>
 											<p>{{ $brg->nama_produk }}</p>
                       <?php if($id != null){ ?>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login | E-Shopper</title>
+    <title>Login | Qahwa</title>
     <link href="BahanStudy/css/bootstrap.min.css" rel="stylesheet">
     <link href="BahanStudy/css/font-awesome.min.css" rel="stylesheet">
     <link href="BahanStudy/css/prettyPhoto.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 				<div class="row">
 					<div class="col-md-4 clearfix">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+							<a href=""><img src="BahanStudy/imagesweb/logo.jpeg" alt="" / height="50" width="50"></a>
 						</div>
 
 					</div>

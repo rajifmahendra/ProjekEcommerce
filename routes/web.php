@@ -19,3 +19,7 @@ Route::post('/Masuk', 'Login@Masuk');
 Route::get('/Keluar', 'Login@Keluar');
 Route::post('/AddCart', 'Order@Order');
 Route::get('/Keranjang', 'Order@keranjang');
+Route::get('/Checkout', 'Order@checkout');
+Route::get('/Checkout_List', 'Order@Checkout_List');
+Route::get('/Confirm', 'Order@Confirm');
+Route::post('/Konfirm', 'Order@Confirm_Simpan');
